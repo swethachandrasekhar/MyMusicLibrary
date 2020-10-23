@@ -1,0 +1,153 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/* * {
+  border: red 1px solid;
+} */
+body {
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 25px;
+  color: rgb(57, 177, 57);
+
+}
+
+a {
+  color: rgb(248, 248, 248);
+}
+.page-split-container {
+  display: flex;
+}
+
+.headerContainers {
+min-width: 220px;
+background-color:black;
+height: 100vh;
+position: sticky;
+top: 0;
+}
+
+.search-results-container {
+  width: 75vw;
+  height: 100%;
+}
+
+ul {
+  padding: 20px;
+  padding-left: 50px;
+  color:white;
+  background-color: black;
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search-section {
+  width: 100%;
+  border: 1ps red solid;
+}
+
+.library-results {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 30px;
+
+}
+.search-results {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  width: 100%;
+}
+.releases-section {
+
+  display: flex;
+  border-bottom: 1px solid darkgray;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  
+}
+
+.releases-section  > div img {
+  /* cursor: pointer; */
+  border: 3px transparent solid;
+}
+
+.releases-section:hover > div {
+  cursor: pointer;
+  color: darkblue;
+  
+}
+.releases-section:hover > div img {
+  
+  border: 3px black solid;
+  
+}
+
+.release-image {
+  width: calc(100% / 10);
+ 
+}
+.release-image img{
+  width:  100%;
+  height: calc(width);
+}
+
+.release-name {
+  width: 50%;
+  align-content: center;
+}
+
+
+form {
+  margin: 15px;
+  margin-left: 30px;
+}
+
+input[type=text]{
+
+width: 300px;
+height: 30px;
+border-radius: 10px;
+}
+
+input[type=submit] {
+  padding: 7px 7px;
+  color: rgb(248, 248, 248);
+  background-color: black;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.artist img {
+height: calc( 75vw/ 6);
+width: calc(75vw/ 6);
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;  
+  padding: 10px;
+}
+
+.artist img {
+ 
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+.artist-name {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
